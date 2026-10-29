@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hyderabad Institute of Technology and Management (HITAM) — Autonomous engineering institution accredited by NAAC with A+ Grade (CGPA 3.36), affiliated to JNTU Hyderabad, approved by AICTE.">
+  <meta name="theme-color" content="#013b1f">
+  <title>HITAM | Hyderabad Institute of Technology &amp; Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260818-5">
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="site-header">
+    <div class="brand-container" style="cursor: pointer;" onclick="openModal('admissions-info')" role="button" tabindex="0" aria-label="About HITAM - Hyderabad Institute of Technology and Management" title="About HITAM">
+      <div class="logo-wrapper">
+        <img src="assets/hyderabad_institute_of_technology_management_logo.jpg" alt="HITAM - Hyderabad Institute of Technology and Management Logo" class="hitam-logo">
+      </div>
+      <div class="brand-divider"></div>
+      <div class="brand-text">
+        <h1 class="brand-title">HITAM</h1>
+        <div class="brand-subtitle">HYDERABAD INSTITUTE OF TECHNOLOGY &amp; MANAGEMENT</div>
+        <div class="brand-accreditation">Autonomous, Accredited by NAAC with 'A+' Grade, Affiliated to JNTUH, Approved by AICTE</div>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <div class="counselling-code" style="cursor: pointer;" onclick="openModal('admissions-info')" role="button" tabindex="0" aria-label="TG EAPCET Counselling Code HITM - View Admissions Details" title="View Admissions Code">
+        <span>Counselling Code : </span>
+        <strong class="code-badge">HITM</strong>
+      </div>
+      <div class="estd-text" style="cursor: pointer;" onclick="openModal('achievements')" role="button" tabindex="0" aria-label="Established 2001 - View Institutional Achievements" title="HITAM Established in 2001">Estd. 2001</div>
+    </div>
+  </header>
+
+  <!-- Announcement Bar -->
+  <section class="announcement-bar" aria-label="Announcements Ticker">
+    <div class="announcement-badge" style="cursor: pointer;" onclick="openModal('events')" role="button" tabindex="0" aria-label="Announcements - View Campus Events">
+      <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4 11v2h3l4 4V7L7 11H4zm13.5 1c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 4.45v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+      </svg>
+      <span>ANNOUNCEMENT</span>
+    </div>
+    <div class="ticker-left-arrow" id="tickerPrev" role="button" tabindex="0" aria-label="Previous Announcement" title="Previous Announcement">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </div>
+    <div class="announcement-ticker-wrap">
+      <div class="announcement-track" id="announcementTrack">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+    <div class="ticker-right-arrow" id="tickerNext" role="button" tabindex="0" aria-label="Next Announcement" title="Next Announcement">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="heroSection">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay-gradient"></div>
+
+    <div class="hero-content">
+      <div class="hero-heading-group">
+        <h2 class="hero-title">ABOUT <span class="highlight-lime">HITAM</span></h2>
+        <div class="hero-accent-line"></div>
+      </div>
+
+      <p class="hero-description">
+        HITAM is committed to academic excellence, research, innovation and holistic development of students.
+        We empower young minds with skills, knowledge and values to build a better future.
+      </p>
+
+      <!-- 4 Stats Cards -->
+      <div class="hero-stats-row">
+        <!-- Stat 1 -->
+        <div class="stat-item" onclick="openModal('students-info')" data-modal="students-info" role="button" tabindex="0" aria-label="5000+ Students - View Student Details" title="Click for Student Details">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <span class="stat-number">5000+</span>
+            <span class="stat-label">Students</span>
+          </div>
+        </div>
+
+        <div class="stat-separator"></div>
+
+        <!-- Stat 2 -->
+        <div class="stat-item" onclick="openModal('faculty-info')" data-modal="faculty-info" role="button" tabindex="0" aria-label="120+ Distinguished Faculty - View Faculty Details" title="Click for Faculty Details">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <span class="stat-number">120+</span>
+            <span class="stat-label">Faculty</span>
+          </div>
+        </div>
+
+        <div class="stat-separator"></div>
+
+        <!-- Stat 3 -->
+        <div class="stat-item" onclick="openModal('programs-info')" data-modal="programs-info" role="button" tabindex="0" aria-label="25+ Undergraduate & Specialization Programs - View Programs Details" title="Click for Programs Details">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm-1 13c-1.05-.2-2.2-.3-3.5-.3-1.65 0-3.4.4-4.5 1V7.5c1.1-.6 2.85-1 4.5-1 1.3 0 2.45.1 3.5.3V18z"/>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Programs</span>
+          </div>
+        </div>
+
+        <div class="stat-separator"></div>
+
+        <!-- Stat 4 -->
+        <div class="stat-item" onclick="openModal('placements-info')" data-modal="placements-info" role="button" tabindex="0" aria-label="Career Guidance & Placement Highlights - View Placement Statistics" title="Click for Placements Statistics">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <span class="stat-number">90%+</span>
+            <span class="stat-label">Placements</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="hero-cta-btn" id="exploreBtn" type="button" aria-label="Explore HITAM Campus Life and Portals">
+        <span>EXPLORE HITAM</span>
+        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Carousel Dots Pagination -->
+    <div class="hero-carousel-dots" id="heroDots">
+      <button class="dot-btn active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="dot-btn" data-slide="1" aria-label="Slide 2"></button>
+      <button class="dot-btn" data-slide="2" aria-label="Slide 3"></button>
+      <button class="dot-btn" data-slide="3" aria-label="Slide 4"></button>
+      <button class="dot-btn" data-slide="4" aria-label="Slide 5"></button>
+    </div>
+  </section>
+
+  <!-- 3 Interactive Cards Section -->
+  <section class="portal-grid-section" id="interactiveSection">
+    <div class="grid-container">
+
+      <!-- Column 1: COLLEGE LIFE -->
+      <div class="category-column">
+        <div class="column-header">
+          <div class="title-with-icon">
+            <svg class="cat-header-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9z"/>
+            </svg>
+            <h2>COLLEGE LIFE</h2>
+          </div>
+          <div class="column-green-line"></div>
+        </div>
+
+        <ul class="nav-links-list">
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('departments')" data-modal="departments">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18M3 7v14M21 7v14M6 7V3h12v4M9 11v6M15 11v6M12 11v6"/>
+              </svg>
+              <span>Departments</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('events')" data-modal="events">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('achievements')" data-modal="achievements">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34M7 4h10v6a5 5 0 0 1-10 0V4z"/>
+              </svg>
+              <span>Achievements</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('student-life')" data-modal="student-life">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>Student Life</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('innovation')" data-modal="innovation">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-7 7c0 2.5 1.5 4.5 3 6h8c1.5-1.5 3-3.5 3-6a7 7 0 0 0-7-7z"/>
+              </svg>
+              <span>Innovation</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('placements')" data-modal="placements">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+              </svg>
+              <span>Placements</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="view-more-container">
+          <a href="javascript:void(0)" class="view-more-link" onclick="openModal('college-life-all')" data-modal="college-life-all">
+            <span>View More</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: CAMPUS SERVICES -->
+      <div class="category-column">
+        <div class="column-header">
+          <div class="title-with-icon">
+            <svg class="cat-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 2L2 7h20L12 2z"/>
+            </svg>
+            <h2>CAMPUS SERVICES</h2>
+          </div>
+          <div class="column-green-line"></div>
+        </div>
+
+        <ul class="nav-links-list">
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('library')" data-modal="library">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Library</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('canteen')" data-modal="canteen">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+              </svg>
+              <span>Canteen</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('transport')" data-modal="transport">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="14" rx="2"></rect>
+                <path d="M7 17v3M17 17v3M3 10h18M8 6h.01M16 6h.01"/>
+              </svg>
+              <span>Transport</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('labs')" data-modal="labs">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 2v7.31L4.08 19.26A2 2 0 0 0 5.76 22h12.48a2 2 0 0 0 1.68-2.74L14 9.31V2M8.5 2h7M7 16h10"/>
+              </svg>
+              <span>Labs</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('hostel')" data-modal="hostel">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span>Hostel</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('sports')" data-modal="sports">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/>
+              </svg>
+              <span>Sports</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="view-more-container">
+          <a href="javascript:void(0)" class="view-more-link" onclick="openModal('campus-services-all')" data-modal="campus-services-all">
+            <span>View More</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 3: PORTALS -->
+      <div class="category-column">
+        <div class="column-header">
+          <div class="title-with-icon">
+            <svg class="cat-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <h2>PORTALS</h2>
+          </div>
+          <div class="column-green-line"></div>
+        </div>
+
+        <ul class="nav-links-list">
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('admin-portal')" data-modal="admin-portal">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Admin Portal</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('faculty-portal')" data-modal="faculty-portal">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>Faculty Portal</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('student-portal')" data-modal="student-portal">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 0 1 .665 6.479A11.952 11.952 0 0 0 12 20.055a11.952 11.952 0 0 0-6.824-2.998 12.078 12.078 0 0 1 .665-6.479L12 14z"></path>
+              </svg>
+              <span>Student Portal</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('exam-portal')" data-modal="exam-portal">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Exam Portal</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="view-more-container">
+          <a href="javascript:void(0)" class="view-more-link" onclick="openModal('portals-all')" data-modal="portals-all">
+            <span>View More</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 4: ITP (3+2) -->
+      <div class="category-column">
+        <div class="column-header">
+          <div class="title-with-icon">
+            <svg class="cat-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <h2>ITP (3+2)</h2>
+          </div>
+          <div class="column-green-line"></div>
+        </div>
+
+        <ul class="nav-links-list">
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('itp-overview')" data-modal="itp-overview">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>ITP (3+2) Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('itp-partners')" data-modal="itp-partners">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Partner Universities (USA &amp; Germany)</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('itp-departments')" data-modal="itp-departments">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Departments &amp; MS Degrees</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('itp-fees')" data-modal="itp-fees">
+              <svg class="item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8M12 18V6"></path>
+              </svg>
+              <span>Fee Structure &amp; Scholarships</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item" onclick="openModal('itp-services')" data-modal="itp-services" style="background:#f0fdf4; border-left:3px solid #08752f; border-radius:4px;">
+              <svg class="item-icon" style="color:#08752f;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span style="font-weight:700; color:#08752f;">Overseas MS Remote Desk</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="view-more-container">
+          <a href="javascript:void(0)" class="view-more-link" onclick="openModal('itp-all')" data-modal="itp-all">
+            <span>View More</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Info & Enquiry Section -->
+  <footer class="main-footer-section">
+    <div class="footer-grid">
+
+      <!-- Column 1: CONTACT US -->
+      <div class="footer-col contact-col">
+        <h3 class="footer-title">CONTACT US</h3>
+        <ul class="contact-list">
+          <li>
+            <svg class="footer-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:+919248711150">+91 92487 11150 / 11151</a>
+          </li>
+          <li>
+            <svg class="footer-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:admissions@hitam.org">admissions@hitam.org</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: ADDRESS -->
+      <div class="footer-col address-col">
+        <h3 class="footer-title">ADDRESS</h3>
+        <div class="address-content">
+          <svg class="footer-ico pin-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <p class="address-text">
+            <strong>Hyderabad Institute of Technology and Management (HITAM)</strong><br>
+            Gowdavelly (Village), Near Kompally, Medchal,<br>
+            Medchal-Malkajgiri District, Telangana – 501401, India.
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 3: ENQUIRY -->
+      <div class="footer-col enquiry-col">
+        <h3 class="footer-title">ENQUIRY</h3>
+        <form class="enquiry-form" id="enquiryForm" aria-label="Admissions Enquiry Form">
+          <div class="input-row-two">
+            <input type="text" id="enqName" class="form-input" placeholder="Your Name" aria-label="Your Name" required>
+            <input type="email" id="enqEmail" class="form-input" placeholder="Your Email" aria-label="Your Email" required>
+          </div>
+          <div class="input-row-submit">
+            <textarea id="enqMessage" class="form-textarea" placeholder="Your Message" aria-label="Your Message" required></textarea>
+            <button type="submit" class="submit-btn" id="submitEnquiry" aria-label="Submit Enquiry">
+              <span>SUBMIT</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="form-status-msg" id="formStatus"></div>
+        </form>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bottom Continuous Sliding Marquee Copyright Bar (Sliding right to left) -->
+  <div class="bottom-ticker-bar" aria-hidden="true">
+    <div class="ticker-content-track" id="bottomMarquee">
+      <div class="ticker-sentence">
+        <span>HITAM( HYDERABAD INSTITUTE OF TECHNOLOGY AND MANAGEMENT )</span>
+        <strong class="naik-brand">NAIK SOLUTIONS PVT,LTD</strong>
+      </div>
+      <div class="ticker-sentence">
+        <span>HITAM( HYDERABAD INSTITUTE OF TECHNOLOGY AND MANAGEMENT )</span>
+        <strong class="naik-brand">NAIK SOLUTIONS PVT,LTD</strong>
+      </div>
+      <div class="ticker-sentence">
+        <span>HITAM( HYDERABAD INSTITUTE OF TECHNOLOGY AND MANAGEMENT )</span>
+        <strong class="naik-brand">NAIK SOLUTIONS PVT,LTD</strong>
+      </div>
+      <div class="ticker-sentence">
+        <span>HITAM( HYDERABAD INSTITUTE OF TECHNOLOGY AND MANAGEMENT )</span>
+        <strong class="naik-brand">NAIK SOLUTIONS PVT,LTD</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Information Modal Popup Dialog -->
+  <div class="modal-backdrop" id="infoModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card" id="modalCard">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-icon-badge" id="modalIcon"></div>
+          <div>
+            <h3 class="modal-title" id="modalTitle">Information</h3>
+            <span class="modal-category" id="modalSubtitle">HITAM Hyderabad</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal()" aria-label="Close dialog" title="Close dialog">&times;</button>
+      </div>
+      
+      <div class="modal-body" id="modalBody">
+        <!-- Dynamic content filled by JS -->
+      </div>
+      
+      <div class="modal-footer" id="modalFooter">
+        <button class="modal-action-btn secondary-btn" onclick="closeModal()" aria-label="Close dialog">Close</button>
+        <button class="modal-action-btn primary-btn" onclick="openModal('admissions-info')" aria-label="Contact Admissions Office">Contact Admissions</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=20260818-5"></script>
+</body>
+</html>
